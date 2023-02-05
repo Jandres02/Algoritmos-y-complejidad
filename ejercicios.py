@@ -53,7 +53,53 @@ def largest(x,y,z):
 def second_largest(v):
     v.sort()
     return v[-2]
+# hola = [1,2,44,44,6,3,9]
 
-hola = [1,2,44,44,6,3,9]
-hola.sort()
-print(hola)
+
+def larguest_2(v):
+    m = 0
+    sm = 0
+    for i in v:
+        if i > m:
+            sm = m
+            m = i
+        elif i > sm:
+            sm = i
+    return sm
+
+#Respuesta: El algoritmo realiza N comparaciones en el peor de los casos. En el mejor de los casos realiza 1 comparación.
+
+
+# Write an algorithm that finds the middle, or median, value of three distinct integers. What is the best case of your algorithm? What is the worst case? What is the average case?
+
+
+def median(x,y,z):
+    if x > y and x < z:
+        return x
+    if x < y and x > z:
+        return x
+    if y > x and y < z:
+        return y
+    if y < x and y > z:
+        return y
+    if z > x and z < y:
+        return z
+    if z < x and z > y:
+        return z
+    return x
+
+#Respuesta: El algoritmo realiza 6 comparaciones en el peor de los casos. En el mejor de los casos realiza 1 comparación. El caso promedio es de 3 comparaciones.
+
+
+# Write an algorithm that determines if four integers are distinct. What is the best case for your algorithm? What is the worst case? What is the average case? 
+
+def distinct_4(x,y,z,w):
+    if x == y or x == z or x == w:
+        return False
+    if y == z or y == w:
+        return False
+    if z == w:
+        return False
+    return True
+
+#Respuesta: El algoritmo realiza 6 comparaciones en el peor de los casos. En el mejor de los casos realiza 1 comparación. El caso promedio es de 3 comparaciones.
