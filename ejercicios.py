@@ -102,4 +102,4 @@ def distinct_4(x,y,z,w):
         return False
     return True
 
-#Respuesta: El algoritmo realiza 6 comparaciones en el peor de los casos. En el mejor de los casos realiza 1 comparación. El caso promedio es de 3 comparaciones.
+#Respuesta: El algoritmo realiza 6 comparaciones en el peor de los casos. En el mejor de los casos realiza x comparaciones. El caso promedio es de 3 comparaciones.
